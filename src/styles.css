@@ -1,0 +1,157 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  box-sizing: border-box;
+}
+
+body {
+  /*background: url("./Images/back.jfif")-no-repeat;*/
+  /* background-image: url("https://img00.deviantart.net/d124/i/2012/204/2/5/purple_gradient_background_by_ohsnapjenny-d58axaz.jpg");*/
+  background-image: url("https://th.bing.com/th/id/R.892bb645c09c766efcc5bc4d0c93094a?rik=slmcvUaa5yToAw&riu=http%3a%2f%2fwww.wallpapers13.com%2fwp-content%2fuploads%2f2015%2f12%2fNature-Lake-Bled.-Desktop-background-image.jpg&ehk=c2raFC95S12P3OL0%2fwdM60ro3oUxsSEajkuGEN%2fsjbo%3d&risl=1&pid=ImgRaw&r=0");
+  height: 200vh;
+  background-size: cover;
+  background-position: center;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 10%;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20 px 30px rgba(0, 0, 0, 0.15);
+  color: white;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  color: #8739f9;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+}
+.logo2 {
+  display: none;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px 25px;
+}
+
+a {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px;
+  color: #8739f9;
+  text-decoration: none;
+  cursor: pointer;
+}
+nav li :hover {
+  background-color: rgba(59, 130, 246, 0.5);
+
+  border-radius: px;
+}
+
+nav li a:hover {
+  /*color: #fd5e53;*/
+  transition: all 0.4s ease 0s;
+}
+
+.active {
+  border-bottom: 0.5px solid #e1e1df;
+  /*background: rgba(59, 130, 246, 0.5);*/
+}
+
+#mobile {
+  display: none;
+}
+
+#mobile i {
+  color: #8739f9;
+}
+/*1096*/
+@media only screen and (max-width: 1082px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 75px;
+    right: -300px;
+    width: 200px;
+    height: 100hv;
+    /*background: #e1e1df;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);*/
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 20 px 30px rgba(0, 0, 0, 0.15);
+  }
+  #navbar.active {
+    right: 0px;
+  }
+
+  .logo {
+    margin-left: 5px;
+  }
+  .logo {
+    display: none;
+  }
+
+  #mobile {
+    display: block;
+  }
+
+  nav li {
+    margin-bottom: 25px;
+  }
+
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .logo2 {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #8739f9;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+}
+/*@media only screen and (min-width: 770) and (max-width: 1082px) {
+  nav li {
+    padding: 0px 5px;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .logo2 {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #8739f9;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+  }
+
+  header {
+    padding: 30px 0px;
+  }
+}*/
